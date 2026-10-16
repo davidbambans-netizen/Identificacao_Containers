@@ -1,0 +1,22 @@
+EUROBRAS — IDENTIFICAÇÃO DE CONTAINER
+
+Arquivos:
+- index.html: página de cadastro e pré-visualização da placa.
+- placa-eurobras.png: imagem de referência original da placa.
+- logo-eurobras.png: logo original (mantida como arquivo separado, embora a página já tenha a logo embutida).
+
+CORREÇÕES:
+- A logo foi embutida diretamente no HTML para não desaparecer por caminho de arquivo incorreto.
+- O QR Code foi ajustado para gerar um link da própria página quando ela estiver hospedada em HTTP/HTTPS.
+- Se abrir index.html diretamente no computador (file://), o QR Code conterá os dados em texto e avisará que a página precisa ser publicada para abrir a placa visual em outro celular.
+
+IMPORTANTE SOBRE O SCAN:
+Para o QR Code abrir a página bonita da placa em qualquer celular, publique o index.html em um endereço HTTPS público. Um arquivo aberto localmente no computador não possui um endereço que outros celulares consigam acessar.
+
+TESTE LOCAL:
+1. Extraia todos os arquivos do ZIP.
+2. Abra index.html em um navegador.
+3. Preencha os campos e gere o QR Code.
+4. O código local serve para conferir os dados; o link visual por celular exige hospedagem pública.
+
+Quando a página estiver hospedada, cadastre os dados novamente e gere um QR Code novo. Ele usará o endereço público da página.
